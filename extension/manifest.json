@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "少刷",
+  "version": "0.1.0",
+  "description": "在抖音和 B 站网页版逐步收起推荐，到点暂停。",
+  "permissions": ["storage"],
+  "action": { "default_popup": "popup.html" },
+  "content_scripts": [{
+    "matches": ["https://www.bilibili.com/*", "https://www.douyin.com/*"],
+    "js": ["settings.js", "content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle"
+  }]
+}

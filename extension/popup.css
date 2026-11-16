@@ -1,0 +1,38 @@
+:root {
+  color: #153731;
+  background: #f7fbf9;
+  font: 13px/1.55 "Microsoft YaHei UI", sans-serif;
+  color-scheme: light;
+}
+body { margin: 0; width: 320px; max-width: 100vw; }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 20px;
+  background: #ddf0e8;
+  border-bottom: 1px solid #a4c9c0;
+}
+h1 { font-size: 27px; line-height: 1.15; margin: 0 0 3px; }
+p { margin: 0; }
+main { padding: 16px 20px 18px; }
+.setting, .switch { display: flex; align-items: center; gap: 6px; }
+.setting { justify-content: space-between; }
+.switch { cursor: pointer; }
+input { accent-color: #176b62; width: 17px; height: 17px; }
+select {
+  border: 1px solid #a4c9c0;
+  border-radius: 5px;
+  padding: 4px 5px;
+  background: white;
+  color: inherit;
+  font: inherit;
+}
+:focus-visible { outline: 2px solid #176b62; outline-offset: 3px; }
+.timeline { list-style: none; padding: 0 0 0 10px; margin: 17px 0 14px; border-left: 2px solid #a4c9c0; }
+.timeline li { display: grid; grid-template-columns: 65px 1fr; gap: 5px; padding: 4px 0; }
+.timeline span { color: #176b62; font-weight: 700; }
+.hint { color: #43635b; font-size: 12px; }
+#status { color: #9a3829; }
+#status:empty { display: none; }

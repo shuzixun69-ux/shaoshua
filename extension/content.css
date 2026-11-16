@@ -1,0 +1,38 @@
+:root:is([data-shaoshua-stage="1"], [data-shaoshua-stage="2"], [data-shaoshua-stage="3"])
+  :is(#reco_list, .recommend-list-v1, .recommend-list-v2, .recommend-list-v3, .video-page-card-small) {
+  display: none !important;
+}
+
+:root:is([data-shaoshua-stage="2"], [data-shaoshua-stage="3"])
+  :is(.bili-feed4, [data-shaoshua-next], .bpx-player-ending-panel) {
+  display: none !important;
+}
+
+dialog.shaoshua-break {
+  width: min(390px, calc(100vw - 40px));
+  max-height: calc(100vh - 40px);
+  box-sizing: border-box;
+  padding: 30px;
+  border: 1px solid #a4c9c0;
+  border-top: 6px solid #176b62;
+  border-radius: 12px;
+  background: #eef8f4;
+  color: #153731;
+  box-shadow: 0 20px 60px #001d1966;
+  font: 15px/1.65 "Microsoft YaHei UI", sans-serif;
+}
+dialog.shaoshua-break::backdrop { background: #0b221fbb; }
+dialog.shaoshua-break h2 { color: inherit; font-size: 28px; margin: 0 0 8px; }
+dialog.shaoshua-break p { color: inherit; margin: 0 0 24px; }
+dialog.shaoshua-break button {
+  border: 1px solid #176b62;
+  border-radius: 6px;
+  padding: 8px 13px;
+  margin: 0 8px 5px 0;
+  background: #176b62;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+}
+dialog.shaoshua-break button:last-child { background: transparent; color: #153731; }
+dialog.shaoshua-break button:focus-visible { outline: 3px solid #176b62; outline-offset: 3px; }

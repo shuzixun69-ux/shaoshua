@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>少刷</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="settings.js" defer></script>
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>少刷</h1>
+      <p>抖音和 B 站网页版</p>
+    </div>
+    <label class="switch">
+      <input id="enabled" type="checkbox" disabled>
+      <span>启用</span>
+    </label>
+  </header>
+  <main>
+    <div class="setting">
+      <label for="minutes">暂停前的观看时长</label>
+      <select id="minutes" disabled></select>
+    </div>
+    <ol class="timeline">
+      <li><span id="first"></span>收起 B 站相关推荐</li>
+      <li><span id="second"></span>减少继续刷的入口</li>
+      <li><span id="third"></span>暂停视频，可离开或再看 2 分钟</li>
+    </ol>
+    <p class="hint">每个标签页单独计时，只累计可见页面的视频播放时间。</p>
+    <p id="status" role="status"></p>
+  </main>
+</body>
+</html>
